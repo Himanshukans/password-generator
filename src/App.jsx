@@ -40,16 +40,16 @@ function App() {
     <>
       <div className="w-full min-h-screen flex justify-center items-center bg-[#050505] overflow-x-hidden p-4">
         {/* Dynamic Background Glows */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 blur-[130px] animate-pulse"></div>
+        <div className="pointer-events-none absolute -top-20 -left-20 w-72 md:w-96 h-72 md:h-96 bg-purple-600/10 blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/10 blur-[130px] animate-pulse"></div>
 
-        <div className="relative w-full max-w-[400px] mx-auto shadow-[0_0_60px_rgba(34,_211,_238,_0.2)] rounded-[2.5rem] px-5 md:px-8 py-10 bg-[#0f0f0f] border border-white/5 text-white">
+        <div className="relative w-full max-w-[400px] md:max-w-md mx-auto shadow-[0_0_60px_rgba(34,211,238,0.15)] rounded-[2.5rem] px-6 md:px-8 py-10 bg-[#0f0f0f] border border-white/5 text-white">
           <h1 className="text-4xl font-black text-center mb-10 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent italic tracking-tighter">
             Password Generator
           </h1>
 
           {/* input & button group */}
-          <div className="relative flex items-center p-1 rounded-2xl mb-2 bg-gradient-to-r from-cyan-500 to-purple-600 group shadow-lg hover:shadow-cyan-500/20 transition-all">
+          <div className="relative flex items-center p-1 rounded-2xl mb-2 bg-gradient-to-r from-cyan-500 to-purple-600 group shadow-lg transition-all">
             <input
               type="text"
               value={password}
